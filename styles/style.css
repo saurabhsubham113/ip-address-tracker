@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Rubik:wght@400;500;700&display=swap");
+:root {
+  --very-dark-gray: hsl(0 0% 17%);
+  --dark-gray: hsl(0 0% 59%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.top {
+  text-align: center;
+  color: #fff;
+  height: 40vh;
+  background: url("../images/pattern-bg.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.main-title {
+  padding-top: 4vh;
+}
+.input-tracker-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.input-tracker-text {
+  padding: 14px;
+  width: 30%;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.input-tracker-serach {
+  padding: 14px 15px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.info-box {
+  position: absolute;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: -2rem;
+  left: 15%;
+  /* height: 7rem; */
+  background-color: #fff;
+  color: var(--very-dark-gray);
+  padding: 1rem 0.875rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+  box-shadow: 0px 2px 5px 2px var(--dark-gray);
+}
+.border {
+  border-right: 2px solid var(--dark-gray);
+  height: 4rem;
+}
+.heading {
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+.value {
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  word-wrap: break-word;
+  width: 100%;
+  margin: auto;
+}
+.bottom {
+  /* z-index: -10; */
+  height: 60vh;
+}
+#map {
+  z-index: 1;
+  height: 100%;
+}
